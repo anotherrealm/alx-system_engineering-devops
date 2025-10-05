@@ -1,0 +1,4 @@
+echo "$WATER" | tr 'ewatr' 01234 | \
+awk '{a=$0} END{print ENVIRON["STIR"]}' | tr 'tir.' 0123 | \
+awk '{b=$0; print a+b}' | \
+tr '0123456789' 'shtbeolhc'
